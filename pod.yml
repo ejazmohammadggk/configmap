@@ -1,0 +1,17 @@
+apiVersion: "v1"
+kind: Pod
+metadata:
+  name: javaweb
+  labels:
+    name: javaweb
+    app: java
+spec:
+  containers:
+    - name: javaweb
+      image: navyateja/configmapdemo
+      env:
+        - name: MYNAME
+          valueFrom:
+            configMapKeyRef:
+              name: myname
+              key: myname.name
