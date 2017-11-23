@@ -1,0 +1,9 @@
+ kubectl create -f confimap.yml
+ kubectl create -f pod.yml
+kubectl exec -it javaweb /bin/bash
+ 
+ 
+ inside container 
+ $env
+ 
+ u can see the environmnet varbile 
